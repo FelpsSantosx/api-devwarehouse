@@ -11,5 +11,9 @@
     "url": "https://github.com/FelpsSantosx/api-devwarehouse.git"
   },
   "author": "Felipe Souza",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.5.2"
+  }
 }
