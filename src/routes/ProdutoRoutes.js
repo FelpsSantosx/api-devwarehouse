@@ -3,10 +3,10 @@ const ProdutoController = require('../controllers/ProdutoController')
 
 const router = express.Router()
 
-Router.post('/', ProdutoController.create)
-Router.get('/', ProdutoController.list)
-Router.put('/', ProdutoController.update)
-Router.delete('/', ProdutoController.delete)
+router.post('/', ProdutoController.create)
+router.get('/', ProdutoController.list)
+router.put('/:id', ProdutoController.update)
+router.delete('/:id', ProdutoController.delete)
 
 module.exports = router
 

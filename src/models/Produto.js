@@ -9,4 +9,4 @@ const ProdutoSchema = mongoose.Schema({
     image_url: String
 })
 
-module.exports = mongoose.models('Produto', ProdutoSchema)
+module.exports = mongoose.model('Produto', ProdutoSchema)

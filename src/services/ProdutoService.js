@@ -1,14 +1,13 @@
-const Produto = require('/models/Produto')
+const Produto = require('../models/Produto')
 
 class ProdutoService {
     async create(data) {
         const produto = new Produto(data)
-        return await produto.save
+        return await produto.save()
     }
 
-
     async list() {
-        return await Produto.find
+        return await Produto.find()
     }
 
     async update(id, data) {
@@ -20,4 +19,4 @@ class ProdutoService {
     }
 }
 
-module.export = new ProdutoService()
+module.exports = new ProdutoService()

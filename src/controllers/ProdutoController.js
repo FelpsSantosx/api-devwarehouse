@@ -3,7 +3,7 @@ const ProdutoService = require('../services/ProdutoService')
 class ProdutoController {
 
     async create(req, res) {
-        const produto = await ProdutoService(req.body)
+        const produto = await ProdutoService.create(req.body)
         res.send(produto)
     }
 
@@ -24,5 +24,5 @@ class ProdutoController {
 
 }
 
-module.export = new ProdutoController()
+module.exports = new ProdutoController()
 
