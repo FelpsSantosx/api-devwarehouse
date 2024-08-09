@@ -1,7 +1,6 @@
 const mongoose = require('mongoose')
 const { Schema } = mongoose
 
-
 const ProdutoSchema = mongoose.Schema({
     produto: String,
     descricao: String,
