@@ -4,7 +4,6 @@ const { Schema } = mongoose
 const CadastroShema = mongoose.Schema({
     nome: String,
     sobrenome: String,
-    datadenascimento: String,
     cpf: String,
     celular: String,
     email: String,

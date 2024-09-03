@@ -5,6 +5,12 @@ const jwt = require('jsonwebtoken');;
 class UsuarioService {
 
     async createUser(data) {
+        // Criar hash de senha
+        const salt = await bcrypt.genSalt(12)
+        const senhaHash = await bcrypt.hash(data.senha, salt)
+
+        data.senha = senhaHash;
+
         const newUser = new cadastroUsuario(data)
         return await newUser.save()
     }

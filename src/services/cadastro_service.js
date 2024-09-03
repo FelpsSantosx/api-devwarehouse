@@ -3,6 +3,15 @@ const Cadastro = require('../models/cadastro')
 class CadastroService {
     async create(data) {
         const cadastro = new Cadastro(data)
+
+        // Criar Validaçãoe 
+        const {nome, sobrenome, cpf, celular, email, senha, confirmasenha} = data
+
+        if(!nome) {
+            return res.status(422).json({ msg: 'o nome é obrigatorio'})
+        }
+        
+
         return await cadastro.save()
     }
 
