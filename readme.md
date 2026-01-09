@@ -1,6 +1,6 @@
 # 📦 DevWarehouse API
 
-API RESTful construída em **Node.js** com **Express** e **MongoDB**, simulando o backend de um e-commerce. O projeto conta com autenticação de usuários, gerenciamento de produtos e cadastro de clientes.
+API RESTful construída em **Node.js** com **Express** e **MongoDB**, simulando o backend de conta de usuario. O projeto conta com autenticação de usuários, gerenciamento de produtos e cadastro de clientes.
 
 ---
 
